@@ -4,5 +4,7 @@ jobs:
   Push-Docker-Image:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
       - name: Build docker image
         run: echo "Build Docker Image"
